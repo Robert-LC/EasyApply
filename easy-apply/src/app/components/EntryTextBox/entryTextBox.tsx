@@ -8,8 +8,8 @@ interface EntryTextBoxProps {
 
 const EntryTextBox: React.FC<EntryTextBoxProps> = ({ textValue, setTextValue }) => {
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setTextValue(event.target.value);
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setTextValue(e.target.value);
     };
 
     return (

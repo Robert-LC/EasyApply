@@ -16,7 +16,7 @@ const Entry: React.FC<EntryProps> = ({ id, title }) => {
     return (
         <div id={`Entry-${id}`} className={styles.entry}>
             <div className={styles.textInputs}>
-                <TitleTextBox title={title}/>
+                <TitleTextBox title={title} />
                 <EntryTextBox textValue={textValue} setTextValue={setTextValue}/>
             </div>
             <ClipboardButton textValue={textValue} />

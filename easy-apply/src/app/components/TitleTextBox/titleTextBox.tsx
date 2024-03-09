@@ -8,6 +8,11 @@ interface TitleTextBoxProps {
 }
 
 const TitleTextBox: React.FC<TitleTextBoxProps> = ({ title }) => {
+    const [currTitle, setTitle] = React.useState(title);
+
+    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setTitle(e.target.value);
+    }
 
     return (
         <div className={styles.titleTextBoxContainer}>
@@ -15,7 +20,8 @@ const TitleTextBox: React.FC<TitleTextBoxProps> = ({ title }) => {
                 className={styles.titleTextBox}
                 type="text"
                 id="title"
-                value={title}
+                value={currTitle}
+                onChange={onChange}
             />
         </div>
     );
