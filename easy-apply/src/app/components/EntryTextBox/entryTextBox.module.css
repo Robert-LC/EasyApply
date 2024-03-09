@@ -22,3 +22,8 @@
     transition: background-color 0.2s ease;
 }
 
+.entryTextBox:hover {
+    background-color: #e4e4e4;
+}
+
+

@@ -12,7 +12,7 @@
     gap: 20px;
 }
 
-.textInputs {
+.textInput {
     /* Layout */
     display: flex;
     flex-direction: column;

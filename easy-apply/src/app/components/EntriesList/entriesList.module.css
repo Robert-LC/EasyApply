@@ -1,6 +1,8 @@
 .entriesList {
-    width: fit-content;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+.entriesList > * {
+    flex-basis: 33.33%;
 }
