@@ -12,7 +12,7 @@ const EntriesList: React.FC = () => {
     return (
         <div className={styles.entriesList}>
             {entries.map((entry) => (
-                <Entry key={entry.id}  />
+                <Entry key={entry.id} id={entry.id.toString()} />
             ))}
         </div>
     );
