@@ -4,7 +4,7 @@ import EntriesList from "./components/EntriesList/entriesList";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <EntriesList />
     </main>
   );

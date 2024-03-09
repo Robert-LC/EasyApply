@@ -16,6 +16,7 @@
 
     /* Background */
     background-color: #f4f4f4;
+    outline: none;
 
     /* Transition */
     transition: background-color 0.2s ease;

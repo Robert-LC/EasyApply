@@ -8,11 +8,11 @@ const ClipboardButton: React.FC = () => {
     };
 
     return (
-        <>
+        <div className={styles.clipboardButtonContainer}>
             <button onClick={handleClick} className={styles.clipboardButton}>
                 Copy to Clipboard
             </button>
-        </>    
+        </div>    
     );
 };
 
