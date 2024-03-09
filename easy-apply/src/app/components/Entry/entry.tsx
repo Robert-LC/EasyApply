@@ -7,15 +7,16 @@ import TitleTextBox from '../TitleTextBox/titleTextBox';
 
 interface EntryProps {
     id: string;
+    title: string;
 }
 
-const Entry: React.FC<EntryProps> = ({ id }) => {
+const Entry: React.FC<EntryProps> = ({ id, title }) => {
     const [textValue, setTextValue] = React.useState('');
 
     return (
         <div id={`Entry-${id}`} className={styles.entry}>
             <div className={styles.textInputs}>
-                <TitleTextBox />
+                <TitleTextBox title={title}/>
                 <EntryTextBox textValue={textValue} setTextValue={setTextValue}/>
             </div>
             <ClipboardButton textValue={textValue} />

@@ -2,16 +2,12 @@
 import React from 'react';
 import styles from './titleTextBox.module.css';
 
-// Commenting out until I work with functionality
-// interface TitleTextBoxProps {
-//     title: string;
-//     onChange: (value: string) => void;
-// }
 
-const TitleTextBox: React.FC = (/*{ onChange }*/) => {
-    // const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    //     onChange(event.target.value);
-    // };
+interface TitleTextBoxProps {
+    title: string;
+}
+
+const TitleTextBox: React.FC<TitleTextBoxProps> = ({ title }) => {
 
     return (
         <div className={styles.titleTextBoxContainer}>
@@ -19,7 +15,7 @@ const TitleTextBox: React.FC = (/*{ onChange }*/) => {
                 className={styles.titleTextBox}
                 type="text"
                 id="title"
-                // onChange={handleInputChange}
+                value={title}
             />
         </div>
     );
