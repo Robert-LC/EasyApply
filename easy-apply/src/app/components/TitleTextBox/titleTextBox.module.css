@@ -12,9 +12,10 @@
     /* Typography */
     font-weight: bold;
     font-size: 1em;
+    color: white;
 }
 
 .titleTextBox:hover {
-    background-color: rgba(211, 211, 211, 0.329);
+    background-color: rgba(60, 60, 60, 0.329);
     transition: background-color 0.2s ease;
 }
