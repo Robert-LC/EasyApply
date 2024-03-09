@@ -1,0 +1,23 @@
+.textBoxContainer {
+    width: 350px;
+}
+
+.textBox {
+    /* Box Model */
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    /* Typography */
+    font-size: 16px;
+    color: #333;
+
+    /* Background */
+    background-color: #f4f4f4;
+
+    /* Transition */
+    transition: background-color 0.2s ease;
+}
+
