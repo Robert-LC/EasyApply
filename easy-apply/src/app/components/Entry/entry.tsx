@@ -1,17 +1,24 @@
+"use client"
 import React from 'react';
 import styles from './entry.module.css';
 import ClipboardButton from '../ClipboardButton/clipboardButton';
 import EntryTextBox from '../EntryTextBox/entryTextBox';
 import TitleTextBox from '../TitleTextBox/titleTextBox';
 
-const Entry: React.FC = () => {
+interface EntryProps {
+    id: string;
+}
+
+const Entry: React.FC<EntryProps> = ({ id }) => {
+    const [textValue, setTextValue] = React.useState('');
+
     return (
-        <div className={styles.entry}>
+        <div id={`Entry-${id}`} className={styles.entry}>
             <div className={styles.textInputs}>
                 <TitleTextBox />
-                <EntryTextBox />
+                <EntryTextBox textValue={textValue} setTextValue={setTextValue}/>
             </div>
-            <ClipboardButton />
+            <ClipboardButton textValue={textValue} />
         </div>
     );
 };

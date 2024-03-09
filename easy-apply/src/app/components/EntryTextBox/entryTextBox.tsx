@@ -1,17 +1,20 @@
-"use client"
 import React, { useState } from 'react';
 import styles from './entryTextBox.module.css';
 
-const EntryTextBox: React.FC = () => {
-    const [text, setText] = useState('');
+interface EntryTextBoxProps {
+    textValue: string;
+    setTextValue: (value: string) => void;
+}
+
+const EntryTextBox: React.FC<EntryTextBoxProps> = ({ textValue, setTextValue }) => {
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setText(event.target.value);
+        setTextValue(event.target.value);
     };
 
     return (
         <div className={styles.entryTextBoxContainer}>
-            <input className={styles.entryTextBox} type="text" value={text} onChange={handleChange} />
+            <input className={styles.entryTextBox} type="text" value={textValue} onChange={handleChange} />
         </div>
     );
 };
