@@ -1,0 +1,20 @@
+.titleTextBoxContainer {
+    width: 150px;
+    height: 1em;
+}
+
+.titleTextBox {
+    /* Box Model */
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    /* Typography */
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.titleTextBox:hover {
+    background-color: rgba(211, 211, 211, 0.329);
+    transition: background-color 0.2s ease;
+}
