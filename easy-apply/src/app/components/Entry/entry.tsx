@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './entry.module.css';
 import ClipboardButton from '../ClipboardButton/clipboardButton';
-import TextBox from '../TextBox/textBox';
+import EntryTextBox from '../EntryTextBox/entryTextBox';
 
 const Entry: React.FC = () => {
     return (
         <div className={styles.entry}>
-            <TextBox />
+            <EntryTextBox />
             <ClipboardButton />
         </div>
     );

@@ -1,8 +1,8 @@
-.textBoxContainer {
+.entryTextBoxContainer {
     width: 350px;
 }
 
-.textBox {
+.entryTextBox {
     /* Box Model */
     width: 100%;
     padding: 8px;
