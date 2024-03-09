@@ -1,11 +1,11 @@
 .entry {
     /* Box Model */
-    border: 1px solid orange;
+    background-color: #1a1a1a;
     padding: 20px;
     box-sizing: border-box;
   
     /* Layout */
-    width: 100%;
+    width: fit-content;
     height: 15%;
     display: flex;
     align-items: center;
