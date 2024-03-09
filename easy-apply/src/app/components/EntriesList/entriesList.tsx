@@ -1,5 +1,6 @@
 import React from 'react';
-import Entry from './entry';
+import Entry from '../Entry/entry';
+import styles from './entriesList.module.css';
 
 const EntriesList: React.FC = () => {
     const entries = [
@@ -9,7 +10,7 @@ const EntriesList: React.FC = () => {
     ];
 
     return (
-        <div>
+        <div className={styles.entriesList}>
             {entries.map((entry) => (
                 <Entry key={entry.id}  />
             ))}
