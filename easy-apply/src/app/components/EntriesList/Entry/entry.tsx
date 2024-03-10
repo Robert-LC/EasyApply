@@ -1,10 +1,10 @@
 "use client"
 import React from 'react';
 import styles from './entry.module.css';
-import EntryTextBox from '../EntryTextBox/entryTextBox';
-import TitleTextBox from '../TitleTextBox/titleTextBox';
-import ClipboardButton from '../ClipboardButton/clipboardButton';
-import RemoveEntryButton from '../RemoveEntryButton/removeEntryButton';
+import EntryTextBox from '../../EntryTextBox/entryTextBox';
+import TitleTextBox from '../../TitleTextBox/titleTextBox';
+import ClipboardButton from '../../ClipboardButton/clipboardButton';
+import RemoveEntryButton from '../../Toolbar/RemoveEntryButton/removeEntryButton';
 
 interface EntryProps {
     id: string;

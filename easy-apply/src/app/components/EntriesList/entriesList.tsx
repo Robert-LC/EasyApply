@@ -1,5 +1,5 @@
 import React from 'react';
-import Entry from '../Entry/entry';
+import Entry from './Entry/entry';
 import styles from './entriesList.module.css';
 import entries from '../../defaultEntries.json';
 
