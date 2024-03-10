@@ -6,8 +6,6 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
 
 const RemoveEntryButton: React.FC = () => {
-    // Add your component logic here
-
     return (
         <div className={styles.removeEntryButtonContainer}>
             <button className={styles.removeEntryButton}>
