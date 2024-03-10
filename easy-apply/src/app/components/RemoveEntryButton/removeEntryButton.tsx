@@ -9,7 +9,7 @@ const RemoveEntryButton: React.FC = () => {
     // Add your component logic here
 
     return (
-        <div>
+        <div className={styles.removeEntryButtonContainer}>
             <button className={styles.removeEntryButton}>
                 <FontAwesomeIcon icon={faMinus} />
             </button>

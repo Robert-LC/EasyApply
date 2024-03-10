@@ -10,3 +10,8 @@
     cursor: pointer;
     background-color: #eb5c5c;
 }
+
+.removeEntryButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
