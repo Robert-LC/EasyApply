@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    gap: 20px;
 }
 
 .addRemoveRowsButton {
@@ -16,5 +16,18 @@
 
 .addRemoveRowsButton:hover {
     background-color: #319de4;
+    cursor: pointer;
+}
+
+.doneButton {
+    padding: 0.65rem;
+    border: none;
+    background-color: #30ca68;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.doneButton:hover {
+    background-color: #2cac5b;
     cursor: pointer;
 }
