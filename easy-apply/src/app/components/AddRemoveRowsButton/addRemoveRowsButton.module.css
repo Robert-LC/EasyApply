@@ -1,0 +1,20 @@
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.addRemoveRowsButton {
+    padding: 0.65rem;
+    border: none;
+    color: rgb(17, 17, 17);
+    background-color: #32a9f8;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.addRemoveRowsButton:hover {
+    background-color: #319de4;
+    cursor: pointer;
+}
