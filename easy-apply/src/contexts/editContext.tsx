@@ -8,14 +8,15 @@ interface EditContextInterface {
 }
 
 export const EditContext = createContext<EditContextInterface>({ 
-    isEditing: false, setIsEditing: (isEditing) => {} 
+    isEditing: false, 
+    setIsEditing: (isEditing) => {} 
 });
 
 type EditContextProviderProps = {
     children: React.ReactNode;
 }
 
-export default function EditContextProvider({ children }: EditContextProviderProps) {
+export const EditContextProvider = ({ children }: EditContextProviderProps) => {
     const [isEditing, setIsEditing] = useState(false);
     return (
         <EditContext.Provider value={{ isEditing, setIsEditing }}>

@@ -6,7 +6,6 @@
     {"id": 5, "text": "Phone"},
     {"id": 6, "text": "Github URL"},
     {"id": 7, "text": "LinkedIn URL"},
-    {"id": 8, "text": "Other URL"},
-    {"id": 9, "text": "Desired Salary"},
-    {"id": 10, "text": "Current Employer"}
+    {"id": 8, "text": "Desired Salary"},
+    {"id": 9, "text": "Current Employer"}
 ]

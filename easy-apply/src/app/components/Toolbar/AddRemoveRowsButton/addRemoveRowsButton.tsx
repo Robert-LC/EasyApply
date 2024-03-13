@@ -25,7 +25,7 @@ const AddRemoveRowsButton: React.FC = () => {
             </button>
             {isEditing && (
                 <div>
-                    <button className={styles.doneButton}onClick={handleDoneButtonClick}>Done</button>
+                    <button className={styles.doneButton} onClick={handleDoneButtonClick}>Done</button>
                 </div>
             )}
         </div>
