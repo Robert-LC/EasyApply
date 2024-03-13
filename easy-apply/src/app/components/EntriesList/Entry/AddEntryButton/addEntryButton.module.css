@@ -1,0 +1,20 @@
+.addEntryButton {
+    border: none;
+    width: 90%;
+    height: 90%;
+    color: rgb(17, 17, 17);
+    background-color: #30ca68;
+    border-radius: 0.25rem;
+    margin-top: 6px;
+}
+
+.addEntryButton:hover {
+    background-color: #2cac5b;
+    cursor: pointer;
+}
+
+
+.addEntryButtonContainer {
+    display: flex;
+    justify-content: center;
+}
