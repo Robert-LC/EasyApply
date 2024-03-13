@@ -17,10 +17,17 @@ const EntriesList: React.FC = () => {
         setEntryList([...entryList, newEntry]);
     };
 
+    const removeEntry = (id: number) => {
+        setEntryList(entryList.filter((entry) => entry.id !== id));
+    };
+
     return (
         <div className={styles.entriesList}>
             {entryList.map((entry) => (
-                <Entry key={entry.id} id={entry.id.toString()} title={entry.text}/>
+                <Entry key={entry.id} 
+                id={entry.id.toString()} 
+                title={entry.text} 
+                onRemove={removeEntry}/>
             ))}
             {isEditing && <AddEntryButton onClick={addNewEntry} />}
         </div>

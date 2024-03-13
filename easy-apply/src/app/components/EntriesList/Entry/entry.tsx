@@ -12,9 +12,10 @@ import RemoveEntryButton from './RemoveEntryButton/removeEntryButton';
 interface EntryProps {
     id: string;
     title: string;
+    onRemove: (id: number) => void;
 }
 
-const Entry: React.FC<EntryProps> = ({ id, title }) => {
+const Entry: React.FC<EntryProps> = ({ id, title, onRemove }) => {
     const [textValue, setTextValue] = React.useState('');
     const { isEditing } = useContext(EditContext);
 
@@ -26,7 +27,7 @@ const Entry: React.FC<EntryProps> = ({ id, title }) => {
             </div>
             <div className={styles.buttonContainer}>
                 <div style={{ visibility: isEditing ? 'visible' : 'hidden' }}>
-                    <RemoveEntryButton />
+                    <RemoveEntryButton onClick={() => onRemove(parseInt(id))}/>
                 </div>
                 <ClipboardButton textValue={textValue} />
             </div> 
