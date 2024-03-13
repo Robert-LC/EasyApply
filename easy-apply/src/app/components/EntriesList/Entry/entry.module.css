@@ -12,6 +12,16 @@
     gap: 20px;
 }
 
+.removeButton {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* .entry:hover {
+    background-color: #2a2a2a;
+} */
+
 .textInput {
     /* Layout */
     display: flex;
