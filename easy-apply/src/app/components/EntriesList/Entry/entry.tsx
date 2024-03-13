@@ -1,10 +1,13 @@
 "use client"
-import React from 'react';
+import React, { useContext } from 'react';
+import { EditContext } from '../../../../contexts/editContext';
 import styles from './entry.module.css';
 import EntryTextBox from './EntryTextBox/entryTextBox';
 import TitleTextBox from '../../TitleTextBox/titleTextBox';
 import ClipboardButton from '../ClipboardButton/clipboardButton';
 import RemoveEntryButton from './RemoveEntryButton/removeEntryButton';
+
+
 
 interface EntryProps {
     id: string;
@@ -13,6 +16,7 @@ interface EntryProps {
 
 const Entry: React.FC<EntryProps> = ({ id, title }) => {
     const [textValue, setTextValue] = React.useState('');
+    const { isEditing } = useContext(EditContext);
 
     return (
         <div id={`Entry-${id}`} className={styles.entry}>
@@ -21,7 +25,7 @@ const Entry: React.FC<EntryProps> = ({ id, title }) => {
                 <EntryTextBox textValue={textValue} setTextValue={setTextValue}/>
             </div>
             <div className={styles.buttonContainer}>
-                <div>
+                <div style={{ visibility: isEditing ? 'visible' : 'hidden' }}>
                     <RemoveEntryButton />
                 </div>
                 <ClipboardButton textValue={textValue} />

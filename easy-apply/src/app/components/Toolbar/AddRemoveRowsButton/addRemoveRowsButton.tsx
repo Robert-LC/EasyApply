@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+import React, { useContext } from 'react';
+import { EditContext } from '../../../../contexts/editContext';
 import styles from './addRemoveRowsButton.module.css';
 
 /**
@@ -6,7 +8,7 @@ import styles from './addRemoveRowsButton.module.css';
  * where entries can be added or removed
  */
 const AddRemoveRowsButton: React.FC = () => {
-    const [isEditing, setIsEditing] = React.useState(false);
+    const { isEditing, setIsEditing } = useContext(EditContext);
 
     const handleAddRemoveButtonClick = () => {
         setIsEditing(true);

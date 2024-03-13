@@ -17,9 +17,6 @@
     transition: opacity 0.3s ease;
 }
 
-.entry:hover .removeButton {
-    opacity: 1;
-}
 
 /* .entry:hover {
     background-color: #2a2a2a;
