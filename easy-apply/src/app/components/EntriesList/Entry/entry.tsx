@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { EditContext } from '../../../../contexts/editContext';
 import styles from './entry.module.css';
 import EntryTextBox from './EntryTextBox/entryTextBox';
-import TitleTextBox from '../../TitleTextBox/titleTextBox';
+import TitleTextBox from './TitleTextBox/titleTextBox';
 import ClipboardButton from '../ClipboardButton/clipboardButton';
 import RemoveEntryButton from './RemoveEntryButton/removeEntryButton';
 
