@@ -12,7 +12,7 @@ import RemoveEntryButton from './RemoveEntryButton/removeEntryButton';
 interface EntryProps {
     id: string;
     title: string;
-    onRemove: (id: number) => void;
+    onRemove: (id: string) => void;
 }
 
 const Entry: React.FC<EntryProps> = ({ id, title, onRemove }) => {
@@ -27,7 +27,7 @@ const Entry: React.FC<EntryProps> = ({ id, title, onRemove }) => {
             </div>
             <div className={styles.buttonContainer}>
                 <div style={{ visibility: isEditing ? 'visible' : 'hidden' }}>
-                    <RemoveEntryButton onClick={() => onRemove(parseInt(id))}/>
+                    <RemoveEntryButton onClick={() => onRemove(id)}/>
                 </div>
                 <ClipboardButton textValue={textValue} />
             </div> 

@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { EditContext } from '@/contexts/editContext';
+import { v4 as uuidv4 } from 'uuid';
 import Entry from './Entry/entry';
 import styles from './entriesList.module.css';
 import defaultEntries from '../../defaultEntries.json';
@@ -13,13 +14,13 @@ const EntriesList: React.FC = () => {
 
     const addNewEntry = () => {
         const newEntry = {
-            id: entryList.length + 1,
+            id: uuidv4(),
             text: "New Entry"
         };
         setEntryList([...entryList, newEntry]);
     };
 
-    const removeEntry = (id: number) => {
+    const removeEntry = (id: string) => {
         setEntryList(entryList.filter((entry) => entry.id !== id));
     };
 
@@ -27,7 +28,7 @@ const EntriesList: React.FC = () => {
         <div className={styles.entriesList}>
             {entryList.map((entry) => (
                 <Entry key={entry.id} 
-                id={entry.id.toString()} 
+                id={entry.id} 
                 title={entry.text} 
                 onRemove={removeEntry}/>
             ))}
