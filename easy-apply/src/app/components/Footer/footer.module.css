@@ -1,15 +1,11 @@
 .footer {
     display: flex;
-    position: fixed;
-    width: 98%; /** 100% width is causing horizontal scroll - find a fix on refactor*/
-    left: 0;
-    bottom: 0;
+    position: sticky;
     background-color: #131313;
     color: white;
     padding: 20px;
     text-align: center;
     justify-content: space-between;
-    justify-items: left;
 }
 
 .icons {
