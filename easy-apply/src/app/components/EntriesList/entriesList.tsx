@@ -15,7 +15,7 @@ const EntriesList: React.FC = () => {
     const addNewEntry = () => {
         const newEntry = {
             id: uuidv4(),
-            text: "New Entry"
+            title: "New Entry"
         };
         setEntryList([...entryList, newEntry]);
     };
@@ -29,7 +29,7 @@ const EntriesList: React.FC = () => {
             {entryList.map((entry) => (
                 <Entry key={entry.id} 
                 id={entry.id} 
-                title={entry.text} 
+                title={entry.title} 
                 onRemove={removeEntry}/>
             ))}
             {isEditing && entryList.length < MAX_ENTRIES && <AddEntryButton onClick={addNewEntry} />}

@@ -1,11 +1,11 @@
 [
-    {"id": "1", "text": "Name"},
-    {"id": "2", "text": "Email"},
-    {"id": "3", "text": "Address"},
-    {"id": "4", "text": "Zip Code"},
-    {"id": "5", "text": "Phone"},
-    {"id": "6", "text": "Github URL"},
-    {"id": "7", "text": "LinkedIn URL"},
-    {"id": "8", "text": "Desired Salary"},
-    {"id": "9", "text": "Current Employer"}
+    {"id": "1", "title": "Name"},
+    {"id": "2", "title": "Email"},
+    {"id": "3", "title": "Address"},
+    {"id": "4", "title": "Zip Code"},
+    {"id": "5", "title": "Phone"},
+    {"id": "6", "title": "Github URL"},
+    {"id": "7", "title": "LinkedIn URL"},
+    {"id": "8", "title": "Desired Salary"},
+    {"id": "9", "title": "Current Employer"}
 ]
