@@ -5,6 +5,8 @@ import styles from './entriesList.module.css';
 import defaultEntries from '../../defaultEntries.json';
 import AddEntryButton from './Entry/AddEntryButton/addEntryButton';
 
+const MAX_ENTRIES = 21;
+
 const EntriesList: React.FC = () => {
     const { isEditing } = useContext(EditContext);
     const [entryList, setEntryList] = useState(defaultEntries);
@@ -29,7 +31,7 @@ const EntriesList: React.FC = () => {
                 title={entry.text} 
                 onRemove={removeEntry}/>
             ))}
-            {isEditing && <AddEntryButton onClick={addNewEntry} />}
+            {isEditing && entryList.length < MAX_ENTRIES && <AddEntryButton onClick={addNewEntry} />}
         </div>
     );
 };
