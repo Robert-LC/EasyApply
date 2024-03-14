@@ -1,17 +1,25 @@
 "use client"
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './titleTextBox.module.css';
 
 
 interface TitleTextBoxProps {
     title: string;
+    onTitleChange: (newTitle: string) => void;
 }
 
-const TitleTextBox: React.FC<TitleTextBoxProps> = ({ title }) => {
-    const [currTitle, setTitle] = React.useState(title);
+const TitleTextBox: React.FC<TitleTextBoxProps> = ({ title, onTitleChange }) => {
+    const [currTitle, setTitle] = useState(title);
+
+    // Update the local state when the title prop changes
+    useEffect(() => {
+        setTitle(title);
+    }, [title]);
+
 
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setTitle(e.target.value);
+        onTitleChange(e.target.value);
     }
 
     return (
