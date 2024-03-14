@@ -12,6 +12,8 @@ EasyApply is a ReactJS application designed to streamline the job application pr
   
 - **Time-Saving:** With EasyApply, users can have the application details open on a separate page, making it convenient to switch between the application form and the EasyApply interface to copy and paste information swiftly.
 
+-**Ready for Next Time:** KeyEasy stores the amount of entires, order, and titles in local storage to save you time when you open it, but purposely does not save your input values for saftey.
+
 ## How to Use
 
 1. **Add Fields:** Start by adding the necessary fields for your job applications. This could include items like LinkedIn URL, GitHub URL, address, desired salary, etc.
