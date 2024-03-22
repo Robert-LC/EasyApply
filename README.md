@@ -1,6 +1,14 @@
-## Description 
+## EasyApply 
 
-EasyApply is a ReactJS application designed to streamline the job application process. Applying for jobs can be time-consuming, especially when you have to repeatedly enter the same information across different application platforms. EasyApply aims to simplify this process by providing a centralized platform where users can store their commonly used application details and quickly copy them to the clipboard for easy pasting.
+React/NextJS customizable dashboard that saves you precious time and keystrokes when applying for jobs.
+
+## Motivation
+
+Applying for jobs is time-consuming, and as a programmer we learn early, **DON'T REPEAT YOURSELF.**
+Well when applying for jobs you do that over and over, typing your name, email, and LinkedIn URL repeatedly and it gets tiring.
+EasyApply is a centeralized dashboard where users can store their commonly used application details and quickly copy them to the clipboard for easy pasting.
+
+Use it with a second screen and watch how fast your muscle memory kicks into the locations of the "Copy to Clipboard" buttons.
 
 ## Features
 
@@ -12,7 +20,7 @@ EasyApply is a ReactJS application designed to streamline the job application pr
   
 - **Time-Saving:** With EasyApply, users can have the application details open on a separate page, making it convenient to switch between the application form and the EasyApply interface to copy and paste information swiftly.
 
--**Ready for Next Time:** KeyEasy stores the amount of entires, order, and titles in local storage to save you time when you open it, but purposely does not save your input values for saftey.
+-**Ready for Next Time:** KeyEasy stores the amount of entires, order, and Entry titles in local storage to save you time when you open it, but purposely does not save your input values for saftey.
 
 ## How to Use
 
@@ -24,7 +32,7 @@ EasyApply is a ReactJS application designed to streamline the job application pr
 
 4. **Paste and Apply:** Switch to the application form and paste the information where required, saving time and effort.
 
-## Installation
+## 🚀 Quick Start
 
 To use EasyApply, follow these steps:
 
