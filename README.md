@@ -18,9 +18,7 @@ Use it with a second screen and watch how fast your muscle memory kicks into the
   
 - **Copy to Clipboard:** Each item added to the application list comes with a "Copy to Clipboard" button, enabling users to quickly copy the information and paste it into various application forms.
   
-- **Time-Saving:** With EasyApply, users can have the application details open on a separate page, making it convenient to switch between the application form and the EasyApply interface to copy and paste information swiftly.
-
--**Ready for Next Time:** KeyEasy stores the amount of entires, order, and Entry titles in local storage to save you time when you open it, but purposely does not save your input values for saftey.
+- **Ready for Next Time:** KeyEasy stores the amount of entires, order, and Entry titles in local storage to save you time when you open it, but purposely does not save your input values for saftey.
 
 ## How to Use
 
