@@ -1,4 +1,4 @@
-## EasyApply 
+## EasyApply
 
 React customizable dashboard that saves you precious time and keystrokes when applying for jobs.
 
@@ -11,7 +11,6 @@ Well when applying for jobs you do that over and over, typing your name, email, 
 EasyApply is a centeralized dashboard where users can store their commonly used application details and quickly copy them to the clipboard for easy pasting.
 
 Use it with a second screen and watch how fast your muscle memory kicks into the locations of the "Copy to Clipboard" buttons.
-
 
 ## 🚀 Quick Start
 
