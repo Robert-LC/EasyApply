@@ -7,8 +7,6 @@ import Toolbar from "./components/Toolbar/toolbar";
 import { EditContextProvider } from "../contexts/editContext";
 
 export default function Home() {
-  const [isEditing, setIsEditing] = React.useState(false);
-
   return (
     <div className={styles.appContainer}>
       <EditContextProvider>
