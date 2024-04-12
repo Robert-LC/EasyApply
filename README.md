@@ -8,7 +8,7 @@ React customizable dashboard that saves you precious time and keystrokes when ap
 
 Applying for jobs is time-consuming, and as a programmer we learn early, **DON'T REPEAT YOURSELF.**
 Well when applying for jobs you do that over and over, typing your name, email, LinkedIn URL, etc repeatedly and it gets tiring.
-EasyApply is a centeralized dashboard where users can store their commonly used application details and quickly copy them to the clipboard for easy pasting.
+EasyApply is a dashboard where users can hold their commonly used application details and quickly copy them to the clipboard for easy pasting.
 
 Use it with a second screen and watch how fast your muscle memory kicks into the locations of the "Copy to Clipboard" buttons.
 
